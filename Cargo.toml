@@ -1,7 +1,13 @@
 [package]
-name = "rust-async"
+name = "simple-async"
 version = "0.1.0"
+authors = [ "Robin Quint <rob2309@hotmail.de>" ]
 edition = "2021"
+description = "Very simple async runtime for Rust"
+repository = "https://github.com/Rob2309/simple-async-rs"
+license = "MIT"
+keywords = [ "async", "coroutines", "executor", "futures" ]
+categories = [ "asynchronous", "concurrency" ]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 

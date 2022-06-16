@@ -1,6 +1,6 @@
 use std::time::Duration;
 
-use rust_async::{executor::Executor, futures::sleep};
+use simple_async::{executor::Executor, futures::sleep};
 
 fn main() {
     let mut executor = Executor::new();

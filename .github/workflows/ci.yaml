@@ -1,0 +1,11 @@
+name: Continuous Integration
+
+on:
+  push:
+    branches:
+      - "*"
+  pull_request:
+
+jobs:
+  lints-and-tests:
+    uses: rob2309/workflows/.github/workflows/rust-code-check.yaml@master

@@ -1,6 +1,6 @@
 use std::time::Duration;
 
-use rust_async::{async_main, futures::sleep};
+use simple_async::{async_main, futures::sleep};
 
 async_main! {
     println!("Test123");
