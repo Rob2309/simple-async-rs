@@ -3,7 +3,7 @@ use std::time::Duration;
 use simple_async::{executor::Executor, futures::sleep};
 
 fn main() {
-    let mut executor = Executor::new();
+    let executor = Executor::new();
 
     executor.spawn(foo());
     executor.spawn(bar());

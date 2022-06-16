@@ -23,7 +23,7 @@ impl Executor {
 
     /// Enqueues a future into the executor.
     /// It will be run to completion when [`run()`](Self::run()) is called.
-    pub fn spawn(&mut self, future: impl Future<Output = ()> + 'static) {
+    pub fn spawn(&self, future: impl Future<Output = ()> + 'static) {
         let task = Task::new(future, self.task_sender.clone());
         self.task_sender.send(Rc::new(task)).unwrap();
     }
